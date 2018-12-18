@@ -95,6 +95,7 @@ h1 #channel-star {
     /* #6 #liking #filled  */
     position:absolute;
     right: 16px;
+    font-size: 20px;
 }
 
 /* CHANNELS LIST */
@@ -124,13 +125,23 @@ li {
 
 li .channel-meta {
     /* #5 #channels right-align channel-meta #icons absolute = relative to li */
+    font-size: 24px;
     position: absolute;
     right: 16px;
     top: 12px;
+    display: flex;
 }
 
-li img {
-    vertical-align: middle;
+ul li span span {
+    /* resize and color the new and TTL boxes within meta */
+    background-color: #3F51B5;
+    font-size: x-small;
+    color: white;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 2px;
+    margin: 2px;
+    align-self: center;
 }
 
 li.selected {
@@ -172,7 +183,8 @@ li.selected {
     border-bottom: 4px solid #3F51B5;
 }
 
-#tab-bar button img {
+#tab-bar button i {
+    font-size: 20px;
     display: block;
     margin: 0 auto 4px auto;
 }
@@ -209,6 +221,10 @@ li.selected {
 
     /* #6 #hide the #smile menu */
     display: none;
+}
+
+.far {
+    font-size: 24px;
 }
 
 /* MESSAGES */
@@ -269,4 +285,10 @@ li.selected {
 
 .message.own {
     margin-left: 17.5%;
+}
+
+#message-box {
+    border: 0px;
+    font-size: medium;
+    flex-grow: 1;
 }
